@@ -1,0 +1,42 @@
+What are JWT uses?
+
+
+ChatGPT said:
+JSON Web Token (JWT) is widely used for authentication and secure data transmission in web applications. Here are its key uses:
+
+1. User Authentication
+JWT is commonly used for user authentication in web and mobile apps.
+
+After successful login, the server generates a JWT and sends it to the client.
+
+The client includes the JWT in subsequent requests (usually in the Authorization header).
+
+The server validates the token to grant access to protected resources.
+
+2. Authorization
+JWTs help in role-based access control (RBAC).
+
+Users with different roles (admin, user, editor) receive tokens with specific claims that define their permissions.
+
+3. Single Sign-On (SSO)
+JWT allows users to log in once and access multiple applications without re-authentication.
+
+The token can be shared between different services in a distributed system.
+
+4. API Security & Stateless Authentication
+APIs use JWT for secure communication between clients and servers.
+
+The server does not need to store session data, as all necessary information is encoded in the token.
+
+5. Microservices Communication
+JWT facilitates secure communication between microservices by passing identity claims.
+
+Each microservice can verify the token without depending on a central authentication service.
+
+6. Data Integrity & Secure Transmission
+Since JWTs are signed using HMAC or RSA, they ensure data integrity.
+
+Clients and servers can verify that the token has not been altered.
+
+7. Token-Based WebSockets Authentication
+JWT can be used to authenticate WebSocket connections for real-time applications.
